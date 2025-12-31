@@ -1,0 +1,210 @@
+/* Sidebar Footer - Responsive */
+.sidebar-footer {
+  padding: 15px;
+  text-align: center;
+}
+
+.login-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.login-icon {
+  width: 50px;
+  height: 50px;
+  background: #4a6fa5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.login-icon:hover {
+  background: #3a5a8c;
+  transform: scale(1.05);
+}
+
+.auth-dropdown {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  min-width: 120px;
+  z-index: 100;
+}
+
+.auth-btn {
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.auth-btn:hover {
+  background: #f5f5f5;
+}
+
+.login-btn {
+  color: #2c7be5;
+}
+
+.signup-btn {
+  color: #6f42c1;
+}
+
+/* Responsive Design */
+
+/* Large phones (iPhone 14 Pro Max, Samsung S22 Ultra) */
+@media (max-width: 430px) {
+  .sidebar-footer {
+    padding: 12px;
+  }
+  
+  .login-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  
+  .auth-dropdown {
+    bottom: 55px;
+  }
+  
+  .auth-btn {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+}
+
+/* Medium phones (iPhone 14, most Android phones) */
+@media (max-width: 390px) {
+  .sidebar-footer {
+    padding: 10px;
+  }
+  
+  .login-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+  
+  .auth-dropdown {
+    bottom: 52px;
+    min-width: 110px;
+  }
+  
+  .auth-btn {
+    padding: 8px 12px;
+    font-size: 12.5px;
+  }
+}
+
+/* Small phones (iPhone SE, small Android) */
+@media (max-width: 375px) {
+  .login-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 19px;
+  }
+  
+  .auth-dropdown {
+    bottom: 50px;
+    min-width: 105px;
+  }
+  
+  .auth-btn {
+    padding: 7px 11px;
+    font-size: 12px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+  .sidebar-footer {
+    padding: 8px;
+  }
+  
+  .login-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  .auth-dropdown {
+    bottom: 45px;
+    min-width: 95px;
+  }
+  
+  .auth-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar-footer {
+    padding: 18px;
+  }
+  
+  .login-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+  }
+  
+  .auth-dropdown {
+    bottom: 65px;
+    min-width: 130px;
+  }
+  
+  .auth-btn {
+    padding: 12px 18px;
+    font-size: 15px;
+  }
+}
+
+/* Landscape phones and small tablets */
+@media (max-height: 600px) {
+  .sidebar-footer {
+    padding: 10px;
+  }
+  
+  .login-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .auth-dropdown {
+    bottom: 50px;
+  }
+}
+
+/* Very small height devices */
+@media (max-height: 400px) {
+  .sidebar-footer {
+    padding: 5px;
+  }
+  
+  .login-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+  
+  .auth-dropdown {
+    bottom: 40px;
+  }
+}

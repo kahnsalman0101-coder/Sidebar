@@ -1,0 +1,215 @@
+/* Sidebar Menu - Simple and Responsive */
+.sidebar-menu {
+  flex: 1;
+  padding: 15px 0;
+  overflow-y: auto;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 5px 0;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  color: #e0e0e0;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.menu-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.menu-icon {
+  font-size: 20px;
+  margin-right: 12px;
+  width: 24px;
+  text-align: center;
+}
+
+.menu-text {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.menu-arrow {
+  font-size: 18px;
+  color: #4a6fa5;
+}
+
+/* Active Menu Item */
+.menu-item.active .menu-link {
+  background: rgba(74, 111, 165, 0.2);
+  color: white;
+  border-left: 3px solid #4a6fa5;
+}
+
+/* Scrollbar */
+.sidebar-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+/* Responsive Design for All Mobile Sizes */
+
+/* Large phones (iPhone 14 Pro Max, Samsung S22 Ultra) */
+@media (max-width: 430px) {
+  .sidebar-menu {
+    padding: 12px 0;
+  }
+  
+  .sidebar-menu ul {
+    padding: 0 8px;
+  }
+  
+  .menu-link {
+    padding: 10px 12px;
+  }
+  
+  .menu-icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .menu-text {
+    font-size: 13px;
+  }
+}
+
+/* Medium phones (iPhone 14, most Android phones) */
+@media (max-width: 390px) {
+  .menu-link {
+    padding: 9px 11px;
+  }
+  
+  .menu-icon {
+    font-size: 17px;
+    margin-right: 9px;
+  }
+  
+  .menu-text {
+    font-size: 12.5px;
+  }
+}
+
+/* Small phones (iPhone SE, small Android) */
+@media (max-width: 375px) {
+  .sidebar-menu {
+    padding: 10px 0;
+  }
+  
+  .sidebar-menu ul {
+    padding: 0 6px;
+  }
+  
+  .menu-link {
+    padding: 8px 10px;
+  }
+  
+  .menu-icon {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  
+  .menu-text {
+    font-size: 12px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+  .sidebar-menu ul {
+    padding: 0 5px;
+  }
+  
+  .menu-link {
+    padding: 7px 9px;
+  }
+  
+  .menu-icon {
+    font-size: 15px;
+    margin-right: 7px;
+  }
+  
+  .menu-text {
+    font-size: 11px;
+  }
+  
+  .menu-arrow {
+    font-size: 16px;
+  }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar-menu {
+    padding: 20px 0;
+  }
+  
+  .sidebar-menu ul {
+    padding: 0 12px;
+  }
+  
+  .menu-link {
+    padding: 14px 18px;
+  }
+  
+  .menu-icon {
+    font-size: 22px;
+    margin-right: 14px;
+  }
+  
+  .menu-text {
+    font-size: 15px;
+  }
+}
+
+/* Landscape phones and small tablets */
+@media (max-height: 600px) {
+  .sidebar-menu {
+    padding: 10px 0;
+  }
+  
+  .menu-item {
+    margin: 3px 0;
+  }
+  
+  .menu-link {
+    padding: 8px 12px;
+  }
+}
+
+/* Very small height devices */
+@media (max-height: 400px) {
+  .menu-link {
+    padding: 6px 10px;
+  }
+  
+  .menu-icon {
+    font-size: 16px;
+  }
+  
+  .menu-text {
+    font-size: 12px;
+  }
+}
